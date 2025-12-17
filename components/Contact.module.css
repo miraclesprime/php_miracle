@@ -1,0 +1,254 @@
+.contact {
+  padding: 120px 0;
+  background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(212, 175, 55, 0.03) 100%);
+}
+
+.container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.methods h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactLink:hover {
+  border-color: var(--accent-gold);
+  background-color: rgba(212, 175, 55, 0.05);
+  transform: translateX(8px);
+}
+
+.icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.contactLink div {
+  flex: 1;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.scheduling {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.scheduling p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup textarea {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+  background-color: rgba(212, 175, 55, 0.02);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  text-align: center;
+  color: var(--success);
+  font-weight: 500;
+  padding: 1rem;
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--success);
+  border-radius: 0.375rem;
+  margin-top: 1rem;
+}
+
+.visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .header h2 {
+    margin-bottom: 1rem;
+  }
+
+  .methods h3 {
+    font-size: 1.25rem;
+  }
+
+  .contactLink {
+    padding: 1rem;
+  }
+
+  .formGroup {
+    gap: 0.375rem;
+  }
+
+  .formGroup label {
+    font-size: 0.9rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 0.625rem 0.875rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .contactLinks {
+    gap: 1rem;
+  }
+
+  .contactLink {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactLink:hover {
+    transform: translateY(-2px);
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .scheduling {
+    padding-top: 1rem;
+  }
+
+  .form {
+    gap: 1.25rem;
+  }
+}
