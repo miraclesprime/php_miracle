@@ -117,7 +117,8 @@ export default function Hero() {
         <div className={styles.content}>
           <h1 className={styles.title}>
             <span className={styles.textLine}>Blockchain Developer &</span>
-            <span className={styles.highlight}>Web3 Engineer</span>
+            <span className={styles.highlight}>Web3 Engineer &</span>
+            <span className={styles.textLine}>Full-Stack Developer</span>
           </h1>
 
           <p className={styles.subtitle}>
