@@ -80,29 +80,29 @@ export default function Contact() {
                 </div>
               </a>
 
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+{/*               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                 <span className={styles.icon}>🔗</span>
                 <div>
                   <div className={styles.label}>LinkedIn</div>
                   <div className={styles.value}>linkedin.com/in/ryantan</div>
                 </div>
-              </a>
+              </a> */}
 
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                 <span className={styles.icon}>🐙</span>
                 <div>
                   <div className={styles.label}>GitHub</div>
-                  <div className={styles.value}>github.com/ryantan</div>
+                  <div className={styles.value}>github.com/pistar96314</div>
                 </div>
               </a>
 
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+{/*               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                 <span className={styles.icon}>𝕏</span>
                 <div>
                   <div className={styles.label}>Twitter</div>
                   <div className={styles.value}>@ryantan_eth</div>
                 </div>
-              </a>
+              </a> */}
             </div>
 
             <div className={styles.scheduling}>
