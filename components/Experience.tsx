@@ -17,7 +17,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'BlockVerse Solutions',
     role: 'Senior Smart Contract Developer',
-    location: 'Singapore (Remote)',
+    location: 'Devtechstu (Remote)',
     startDate: 'Jan 2023',
     endDate: 'Oct 2025',
     type: 'blockchain',
@@ -30,7 +30,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'BlockVerse Solutions',
     role: 'Blockchain Engineer',
-    location: 'Singapore (Remote)',
+    location: 'DevTechStudio LLC (Remote)',
     startDate: 'Feb 2022',
     endDate: 'Dec 2022',
     type: 'blockchain',
@@ -43,7 +43,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'BlockVerse Solutions',
     role: 'Lead Protocol Architect',
-    location: 'Singapore (Remote)',
+    location: 'DevTechStudio LLC  (Remote)',
     startDate: 'Sep 2021',
     endDate: 'Jan 2022',
     type: 'blockchain',
@@ -56,7 +56,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'Selleo Labs sp. z o.o.',
     role: 'Full-Stack Developer',
-    location: 'Bielsko‑Biała, Poland (Remote)',
+    location: 'Biztree (Remote)',
     startDate: 'Jan 2019',
     endDate: 'May 2021',
     type: 'fullStack',
@@ -69,7 +69,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'CodeMinds Solutions',
     role: 'Junior Developer',
-    location: 'Lisbon, Portugal (Remote)',
+    location: 'Affle Enterprise (Remote)',
     startDate: 'May 2017',
     endDate: 'Dec 2018',
     type: 'backend',

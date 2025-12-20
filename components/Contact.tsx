@@ -72,11 +72,11 @@ export default function Contact() {
             </p>
 
             <div className={styles.contactLinks}>
-              <a href="mailto:pistar96314@gmail.com" className={styles.contactLink}>
+              <a href="mailto:devmaster116@gmail.com" className={styles.contactLink}>
                 <span className={styles.icon}>✉️</span>
                 <div>
                   <div className={styles.label}>Email</div>
-                  <div className={styles.value}>pistar96314@gmail.com</div>
+                  <div className={styles.value}>devmaster116@gmail.com</div>
                 </div>
               </a>
 
@@ -88,11 +88,11 @@ export default function Contact() {
                 </div>
               </a> */}
 
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+              <a href="https://github.com/devmaster116" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                 <span className={styles.icon}>🐙</span>
                 <div>
                   <div className={styles.label}>GitHub</div>
-                  <div className={styles.value}>github.com/pistar96314</div>
+                  <div className={styles.value}>github.com/devmaster116</div>
                 </div>
               </a>
 

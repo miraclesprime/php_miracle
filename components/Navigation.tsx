@@ -42,7 +42,7 @@ export default function Navigation() {
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <span className={styles.logoText}>Ryan Tan</span>
+          <span className={styles.logoText}>Dev Master</span>
         </div>
 
         <div className={`${styles.navLinks} ${isMobileMenuOpen ? styles.mobileOpen : ''}`}>

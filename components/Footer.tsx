@@ -27,7 +27,7 @@ export default function Footer() {
         <div className={styles.container}>
           <div className={styles.content}>
             <div className={styles.brand}>
-              <h3>Ryan Tan</h3>
+              <h3>Dev Master</h3>
               <p>Senior Blockchain Engineer | DeFi & Cross-Chain Architecture</p>
             </div>
 
