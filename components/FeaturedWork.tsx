@@ -25,7 +25,7 @@ const caseStudies: CaseStudy[] = [
     descriptor: 'Project Task Management App',
     impact: 'Powerful task assignment, real-time progress tracking, and dynamic work reallocation',
     url: 'https://project.business-in-a-box.com/mytasks',
-    tech: ['Nuxt', 'TypeScript', 'Node.js', 'PostgreSQL'],
+    tech: ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
     details: {
       overview: 'A comprehensive task management application designed for visionary leaders. Effortlessly assign tasks with clarity, track progress in real-time, and dynamically reallocate work as priorities shift.',
       role: 'Full-Stack Developer',
@@ -42,7 +42,7 @@ const caseStudies: CaseStudy[] = [
     descriptor: 'Real-time Service Management Platform',
     impact: 'Enhanced service quality and customer experience with real-time monitoring',
     url: 'https://apgile.com/',
-    tech: ['React', 'Python', 'FastAPI', 'WebSocket', 'PostgreSQL'],
+    tech: ['PHP', 'Symfony', 'JavaScript', 'WebSocket', 'MySQL'],
     details: {
       overview: 'A real-time service management platform enabling teams to receive and manage customer service requests, send and escalate alerts, and monitor team performance. The system includes wearable (smartwatch) interaction support.',
       role: 'Full-Stack Engineer',
@@ -53,71 +53,70 @@ const caseStudies: CaseStudy[] = [
       ]
     }
   },
-    // AI Projects
-    {
-      id: 'ai-microservices',
-      title: 'AI/ML Microservices Platform',
-      descriptor: 'Production-grade FastAPI microservices for ML inference',
-      impact: 'Enabled scalable, real-time AI features in production',
-      url: '#',
-      tech: ['Python', 'FastAPI', 'PyTorch', 'TensorFlow', 'AWS'],
-      details: {
-        overview: 'Built and deployed microservices for ML inference using FastAPI, integrating PyTorch/TensorFlow models and serving predictions at scale.',
-        role: 'Senior Python AI Engineer',
-        results: [
-          'Integrated ML models into production APIs',
-          'Deployed scalable workloads on AWS (EC2, Lambda, S3, SQS, SNS)',
-          'Collaborated with UI/UX teams for dashboard integration',
-        ]
-      }
-    },
-    {
-      id: 'ml-forecasting',
-      title: 'ML Analytics & Forecasting',
-      descriptor: 'PyTorch/Keras models for analytics and prediction',
-      impact: 'Delivered actionable insights and forecasts for business products',
-      url: '#',
-      tech: ['PyTorch', 'Keras', 'FastAPI', 'AWS', 'PostgreSQL'],
-      details: {
-        overview: 'Developed machine learning models and inference services for analytics and forecasting, consumed by web/mobile apps.',
-        role: 'Python Machine Learning Engineer',
-        results: [
-          'Built and deployed PyTorch/Keras models',
-          'Automated dataset preprocessing and validation',
-          'Maintained CI/CD for model versioning and deployment',
-        ]
-      }
-    },
-    {
-      id: 'etl-pipelines',
-      title: 'ETL & Data Ingestion Pipelines',
-      descriptor: 'Robust data workflows for ML training and prediction',
-      impact: 'Supported real-time and batch ML pipelines',
-      url: '#',
-      tech: ['Python', 'Celery', 'PostgreSQL', 'MongoDB', 'Redis'],
-      details: {
-        overview: 'Designed ETL pipelines and data ingestion workflows for ML training and real-time prediction, leveraging Celery and modern databases.',
-        role: 'Python Developer',
-        results: [
-          'Implemented background workers and batch ML workflows',
-          'Optimized feature storage and caching with PostgreSQL, MongoDB, Redis',
-          'Created reusable REST API components for ML features',
-        ]
-      }
-    },
-    // Add more AI projects here as needed
+  // PHP/JavaScript Projects
+  {
+    id: 'ai-microservices',
+    title: 'AI/ML Microservices Platform',
+    descriptor: 'Production-grade PHP/Laravel microservices for data processing',
+    impact: 'Enabled scalable, real-time features in production',
+    url: '#',
+    tech: ['PHP', 'Laravel', 'JavaScript', 'AWS'],
+    details: {
+      overview: 'Built and deployed microservices for data processing using Laravel, integrating with JavaScript frontends and serving results at scale.',
+      role: 'Senior PHP Developer',
+      results: [
+        'Integrated business logic into production APIs',
+        'Deployed scalable workloads on AWS (EC2, Lambda, S3, SQS, SNS)',
+        'Collaborated with UI/UX teams for dashboard integration',
+      ]
+    }
+  },
+  {
+    id: 'ml-forecasting',
+    title: 'Analytics & Forecasting',
+    descriptor: 'PHP/JavaScript modules for analytics and prediction',
+    impact: 'Delivered actionable insights and forecasts for business products',
+    url: '#',
+    tech: ['PHP', 'JavaScript', 'Laravel', 'MySQL'],
+    details: {
+      overview: 'Developed analytics modules and reporting services for business forecasting, consumed by web/mobile apps.',
+      role: 'Full-Stack Developer',
+      results: [
+        'Built and deployed analytics modules',
+        'Automated data preprocessing and validation',
+        'Maintained CI/CD for versioning and deployment',
+      ]
+    }
+  },
+  {
+    id: 'etl-pipelines',
+    title: 'ETL & Data Ingestion Pipelines',
+    descriptor: 'Robust PHP data workflows for reporting and analytics',
+    impact: 'Supported real-time and batch data pipelines',
+    url: '#',
+    tech: ['PHP', 'Symfony', 'MySQL', 'Redis'],
+    details: {
+      overview: 'Designed ETL pipelines and data ingestion workflows for reporting and analytics, leveraging Symfony and modern databases.',
+      role: 'PHP Developer',
+      results: [
+        'Implemented background workers and batch workflows',
+        'Optimized feature storage and caching with MySQL, Redis',
+        'Created reusable REST API components for reporting features',
+      ]
+    }
+  },
   {
     id: 'bookkeeping-ai',
     title: 'Bookkeeping/Finance Automation',
-    descriptor: 'AI-Powered Financial Operations Platform',
+    descriptor: 'Automated Financial Operations Platform',
     impact: 'Streamlined financial operations with intelligent categorization and automation',
     url: 'https://booke.ai/us',
-    tech: ['Python', 'FastAPI', 'Machine Learning', 'React', 'PostgreSQL'],
+    tech: ['PHP', 'Laravel', 'JavaScript', 'MySQL'],
     details: {
-      overview: 'An AI-powered platform that streamlines daily financial operations including transaction categorization, bank reconciliations, invoice and receipt data extraction, error detection, and month-end close support. Seamlessly integrates with Xero and QuickBooks Online.',
-      role: 'Backend Engineer / ML Integrator',
+      overview: 'A platform that streamlines daily financial operations including transaction categorization, bank reconciliations, invoice and receipt data extraction, error detection, and month-end close support. Seamlessly integrates with Xero and QuickBooks Online.',
+      role: 'Backend Engineer / Integrator',
       results: [
-        'Designed ML pipelines for transaction categorization and data extraction',
+        'Designed data pipelines for transaction categorization and data extraction',
         'Implemented integrations with accounting systems (Xero, QuickBooks Online)',
         'Built robust error detection and reconciliation workflows',
       ]
@@ -126,16 +125,16 @@ const caseStudies: CaseStudy[] = [
   {
     id: 'vinext',
     title: 'Vinext.ai',
-    descriptor: 'AI-Powered Image & Video Generation Platform',
-    impact: 'Scalable backend for instant AI-driven creative content generation',
+    descriptor: 'Image & Video Generation Platform',
+    impact: 'Scalable backend for instant creative content generation',
     url: 'https://vinext.ai/',
-    tech: ['Python', 'FastAPI', 'Generative AI', 'Microservices', 'AWS'],
+    tech: ['PHP', 'Laravel', 'JavaScript', 'AWS'],
     details: {
-      overview: 'A web platform providing AI-powered image and video generation tools. Users input text or media prompts to generate visuals and short videos instantly using advanced generative models.',
+      overview: 'A web platform providing image and video generation tools. Users input text or media prompts to generate visuals and short videos instantly using advanced models.',
       role: 'Backend Engineer',
       results: [
-        'Designed and scaled Python FastAPI microservices for handling user requests',
-        'Orchestrated AI generation workflows with efficient processing pipelines',
+        'Designed and scaled Laravel microservices for handling user requests',
+        'Orchestrated generation workflows with efficient processing pipelines',
         'Optimized backend to serve results efficiently to the frontend',
       ]
     }
@@ -146,12 +145,12 @@ const caseStudies: CaseStudy[] = [
     descriptor: 'Enterprise Analysis Platform for Regulated Industries',
     impact: 'Modernized platform serving energy, healthcare, and manufacturing sectors',
     url: 'https://taproot.com/',
-    tech: ['React', 'TypeScript', 'Django', 'Flask', 'PostgreSQL', 'AWS'],
+    tech: ['PHP', 'Laravel', 'TypeScript', 'Vue.js', 'MySQL', 'AWS'],
     details: {
-      overview: 'An enterprise React/Django platform used in regulated industries such as energy, healthcare, and manufacturing. Modernized frontend using TypeScript with a composition-based architecture and reusable accessible UI components.',
+      overview: 'An enterprise Laravel platform used in regulated industries such as energy, healthcare, and manufacturing. Modernized frontend using TypeScript with a composition-based architecture and reusable accessible UI components.',
       role: 'Full-Stack Developer',
       results: [
-        'Modernized frontend with TypeScript and Tailwind CSS/shadcn/ui components',
+        'Modernized frontend with TypeScript and reusable UI components',
         'Improved backend API performance through query optimization and caching',
         'Implemented comprehensive Jest and Cypress test coverage',
       ]

@@ -28,7 +28,7 @@ export default function Footer() {
           <div className={styles.content}>
             <div className={styles.brand}>
               <h3>Miracle Prime</h3>
-              <p>Senior Python/AI Engineer</p>
+              <p>Senior PHP/JavaScript Engineer</p>
             </div>
 
             <div className={styles.links}>

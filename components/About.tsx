@@ -25,73 +25,63 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className={`${styles.about} ${isVisible ? styles.visible : ''}`}>
-      <div className={styles.container}>
+    <section id="about" ref={sectionRef} className={`${styles.about} ${isVisible ? styles.visible : ''}`}> 
+      <div className={styles.container}> 
         <h2 className="section-title">About & Value</h2>
-
-        <div className={styles.content}>
-          <div className={styles.narrative}>
+        <div className={styles.content}> 
+          <div className={styles.narrative}> 
             <p>
-              Senior Python/AI Engineer with 10+ years of experience building production-grade AI/ML systems and backend services. Specialized in FastAPI, PyTorch, TensorFlow, and scalable cloud deployments on AWS.
+              Senior PHP/JavaScript Developer with 5+ years of experience building robust, scalable web applications. Specialized in PHP 8.1+, Laravel, Symfony, and modern JavaScript frameworks. Passionate about delivering clean, maintainable code and leveraging the latest technologies to solve complex business challenges.
             </p>
             <p>
-              I design and deploy AI/ML microservices, architect ETL/data pipelines, and deliver robust model inference APIs for real-time and batch prediction. I have deep experience with Python, ML frameworks, and cloud automation.
+              I design and implement RESTful APIs, architect backend services, and build dynamic frontends using JavaScript (Vue.js, AngularJS). I have deep experience with MySQL, PostgreSQL, Redis, and cloud automation for web deployments.
             </p>
             <p>
-              I thrive in cross-functional teams, collaborating with product, data, and UI/UX to deliver reliable, user-focused AI features from prototype to production.
+              I thrive in cross-functional teams, collaborating with product, QA, and frontend engineers to deliver high-quality, user-focused solutions from prototype to production.
             </p>
           </div>
-
-          <div className={styles.facts}>
-            <div className={styles.factItem}>
-              <div className={styles.factLabel}>Location</div>
+          <div className={styles.facts}> 
+            <div className={styles.factItem}> 
+              <div className={styles.factLabel}>Location</div> 
               <div className={styles.factValue}>Remote</div>
             </div>
-
-            <div className={styles.factItem}>
-              <div className={styles.factLabel}>Experience</div>
-              <div className={styles.factValue}>10+ years</div>
+            <div className={styles.factItem}> 
+              <div className={styles.factLabel}>Experience</div> 
+              <div className={styles.factValue}>5+ years</div> 
             </div>
-
-            <div className={styles.factItem}>
-              <div className={styles.factLabel}>Primary Focus</div>
-              <div className={styles.factValue}>Python, AI/ML, Cloud</div>
+            <div className={styles.factItem}> 
+              <div className={styles.factLabel}>Primary Focus</div> 
+              <div className={styles.factValue}>PHP, JavaScript, Web Development</div> 
             </div>
-
-            <div className={styles.factItem}>
-              <div className={styles.factLabel}>ML/AI Stack</div>
-              <div className={styles.factValue}>PyTorch, TensorFlow, Keras, Scikit-learn</div>
+            <div className={styles.factItem}> 
+              <div className={styles.factLabel}>Backend Stack</div> 
+              <div className={styles.factValue}>PHP 8.1+, Laravel, Symfony, RESTful APIs</div> 
             </div>
-
-            <div className={styles.factItem}>
-              <div className={styles.factLabel}>Cloud & Data</div>
-              <div className={styles.factValue}>AWS, PostgreSQL, MongoDB, Redis</div>
+            <div className={styles.factItem}> 
+              <div className={styles.factLabel}>Frontend & Tooling</div> 
+              <div className={styles.factValue}>JavaScript (Vue.js, AngularJS), HTML5, CSS3, Git, Docker</div> 
             </div>
-
-            <div className={styles.factItem}>
-              <div className={styles.factLabel}>Open To</div>
-              <div className={styles.factValue}>Collaboration & Contract Roles</div>
+            <div className={styles.factItem}> 
+              <div className={styles.factLabel}>Open To</div> 
+              <div className={styles.factValue}>Collaboration & Contract Roles</div> 
             </div>
           </div>
         </div>
-
         <div className={styles.values}>
           <div className={styles.valueCard}>
             <div className={styles.valueIcon}>🔒</div>
             <h3>Security First</h3>
-            <p>Every contract audited, every mechanism tested. Security is never a trade-off.</p>
+            <p>Secure coding practices, regular code reviews, and robust authentication/authorization for every project.</p>
           </div>
-
           <div className={styles.valueCard}>
             <div className={styles.valueIcon}>⚡</div>
             <h3>Performance Obsessed</h3>
-            <p>Gas optimization, efficient state design, and scalable architecture by default.</p>
+            <p>Optimized queries, scalable architecture, and efficient code for high-performance web applications.</p>
           </div>
-
           <div className={styles.valueCard}>
-            <div className={styles.valueIcon}>🔗</div>
-            <h3>Cross-Chain Ready</h3>
-            <p>Building protocols that work seamlessly across multiple blockchains and layers.</p>
+            <div className={styles.valueIcon}>🤝</div>
+            <h3>Team Collaboration</h3>
+            <p>Working closely with cross-functional teams to deliver reliable, maintainable, and user-focused solutions.</p>
           </div>
         </div>
       </div>

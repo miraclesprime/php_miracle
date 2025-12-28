@@ -12,63 +12,57 @@ interface SkillCategory {
 }
 
 const skillsData: Record<string, SkillCategory> = {
-  ai: {
-    name: 'AI & Machine Learning',
+  backend: {
+    name: 'Backend (PHP)',
     skills: [
-      { name: 'PyTorch', description: 'Deep learning, model training & inference' },
-      { name: 'TensorFlow', description: 'ML pipelines, model optimization' },
-      { name: 'Keras', description: 'Neural network prototyping' },
-      { name: 'Scikit-learn', description: 'Classical ML, feature engineering' },
-      { name: 'ML Pipelines', description: 'Training, inference, embeddings' },
+      { name: 'PHP 8.1+', description: 'Modern PHP for scalable web applications' },
+      { name: 'Laravel', description: 'MVC framework, RESTful APIs, Eloquent ORM' },
+      { name: 'Symfony', description: 'Reusable components, robust architecture' },
+      { name: 'RESTful APIs', description: 'API design and implementation' },
+      { name: 'Composer', description: 'Dependency management for PHP' },
+      { name: 'OOP/SOLID', description: 'Object-oriented design, best practices' },
     ],
   },
-  python: {
-    name: 'Python & Backend',
+  frontend: {
+    name: 'Frontend (JavaScript)',
     skills: [
-      { name: 'Python 3.x', description: 'Modern Python for ML and backend' },
-      { name: 'FastAPI', description: 'Async APIs and microservices' },
-      { name: 'Flask', description: 'Lightweight Python services' },
-      { name: 'Django', description: 'Full-stack web frameworks' },
-      { name: 'RESTful APIs', description: 'API design for ML systems' },
-      { name: 'Async/Await', description: 'Concurrent backend logic' },
-      { name: 'Microservices', description: 'Distributed ML architectures' },
+      { name: 'JavaScript (ES6+)', description: 'Modern JS for dynamic UIs' },
+      { name: 'Vue.js', description: 'Reactive front-end framework' },
+      { name: 'AngularJS', description: 'Component-based SPA development' },
+      { name: 'HTML5', description: 'Semantic markup, accessibility' },
+      { name: 'CSS3', description: 'Responsive, modern styling' },
+      { name: 'AJAX', description: 'Asynchronous web interactions' },
     ],
   },
-  cloud: {
-    name: 'Cloud & DevOps',
-    skills: [
-      { name: 'AWS', description: 'EC2, S3, Lambda, SQS, SNS, model deployment' },
-      { name: 'Serverless', description: 'Cloud automation for ML' },
-      { name: 'Docker', description: 'Containerization for ML workloads' },
-      { name: 'Jenkins', description: 'CI/CD for ML pipelines' },
-      { name: 'GitHub Actions', description: 'CI/CD automation' },
-      { name: 'Linux', description: 'Production environments' },
-    ],
-  },
-  data: {
-    name: 'Data Pipelines & ETL',
-    skills: [
-      { name: 'ETL Workflows', description: 'Data ingestion, preprocessing, streaming' },
-      { name: 'Celery/RQ', description: 'Task queues for ML pipelines' },
-      { name: 'Streaming', description: 'Real-time data for ML' },
-    ],
-  },
-  db: {
+  databases: {
     name: 'Databases',
     skills: [
-      { name: 'PostgreSQL', description: 'Schema design, query optimization' },
-      { name: 'MySQL', description: 'OLTP, feature storage' },
-      { name: 'MongoDB', description: 'NoSQL, aggregation' },
-      { name: 'Redis', description: 'Caching, feature storage' },
+      { name: 'MySQL', description: 'Schema design, query optimization' },
+      { name: 'PostgreSQL', description: 'Advanced SQL, performance tuning' },
+      { name: 'Redis', description: 'Caching, session storage' },
+      { name: 'ElasticSearch', description: 'Full-text search, analytics' },
     ],
   },
-  tools: {
-    name: 'Tools & Collaboration',
+  devops: {
+    name: 'DevOps & Tooling',
     skills: [
-      { name: 'Git', description: 'Version control' },
-      { name: 'GitHub/Bitbucket', description: 'Collaboration, CI/CD' },
-      { name: 'OpenAPI/Swagger', description: 'API documentation' },
-      { name: 'JavaScript/HTML/CSS', description: 'UI/UX collaboration, ML API integration' },
+      { name: 'Git', description: 'Version control, branching workflows' },
+      { name: 'Docker', description: 'Containerization for local/prod environments' },
+      { name: 'Jenkins', description: 'CI/CD automation' },
+      { name: 'GitHub Actions', description: 'CI/CD pipelines' },
+      { name: 'AWS', description: 'EC2, S3, Lambda, SQS' },
+      { name: 'Nginx', description: 'Web server, reverse proxy' },
+    ],
+  },
+  testing: {
+    name: 'Testing & Methodologies',
+    skills: [
+      { name: 'PHPUnit', description: 'Unit and integration testing for PHP' },
+      { name: 'Selenium', description: 'End-to-end browser testing' },
+      { name: 'Xdebug', description: 'Debugging and profiling' },
+      { name: 'Agile/Scrum', description: 'Iterative development, team collaboration' },
+      { name: 'CI/CD', description: 'Automated testing and deployment' },
+      { name: 'TDD', description: 'Test-driven development' },
     ],
   },
 };
@@ -101,7 +95,7 @@ export default function Skills() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className="section-title">Skills & Tooling</h2>
-          <p className={styles.subtitle}>Production-grade expertise across blockchain, full-stack, and DevOps.</p>
+          <p className={styles.subtitle}>Production-grade expertise in PHP, JavaScript, backend, frontend, and DevOps.</p>
         </div>
 
         <div className={styles.tabs}>
@@ -146,24 +140,40 @@ export default function Skills() {
           <h3>Key Proficiencies</h3>
           <div className={styles.highlightList}>
             <div className={styles.highlightItem}>
-              <span className={styles.icon}>🤖</span>
-              <span>AI/ML microservices (FastAPI, PyTorch, TensorFlow)</span>
+              <span className={styles.icon}>💻</span>
+              <span>Advanced PHP (8.1+), Laravel, Symfony</span>
             </div>
             <div className={styles.highlightItem}>
-              <span className={styles.icon}>📈</span>
-              <span>ETL/data pipelines for ML training and inference</span>
+              <span className={styles.icon}>🔗</span>
+              <span>RESTful API architecture and implementation</span>
             </div>
             <div className={styles.highlightItem}>
-              <span className={styles.icon}>☁️</span>
-              <span>Cloud automation & deployment (AWS, Docker, CI/CD)</span>
+              <span className={styles.icon}>🖥️</span>
+              <span>JavaScript (ES6+), Vue.js, AngularJS</span>
             </div>
             <div className={styles.highlightItem}>
               <span className={styles.icon}>🗄️</span>
-              <span>Database design (PostgreSQL, MongoDB, Redis)</span>
+              <span>MySQL & PostgreSQL database design and optimization</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.icon}>⚙️</span>
+              <span>Asynchronous processing with queues (RabbitMQ, AWS SQS)</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.icon}>🐳</span>
+              <span>Dockerized development and deployment</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.icon}>🚀</span>
+              <span>CI/CD automation (Jenkins, GitHub Actions)</span>
+            </div>
+            <div className={styles.highlightItem}>
+              <span className={styles.icon}>🔒</span>
+              <span>Secure coding practices and code reviews</span>
             </div>
             <div className={styles.highlightItem}>
               <span className={styles.icon}>🤝</span>
-              <span>Cross-team collaboration (UI/UX, product, data)</span>
+              <span>Agile/Scrum team collaboration</span>
             </div>
           </div>
         </div>
